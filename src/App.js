@@ -26,8 +26,8 @@ function App() {
     method: 'GET',
     url: 'https://quotes15.p.rapidapi.com/quotes/random/',
     headers: {
-      'x-rapidapi-key': '9668ba13famsh518b845e512b1abp1b19b0jsn0c43a0db29b2',
-      'x-rapidapi-host': 'quotes15.p.rapidapi.com',
+      'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI_KEY,
+      'x-rapidapi-host': process.env.REACT_APP_RAPIDAPI_HOST,
     },
   };
 
