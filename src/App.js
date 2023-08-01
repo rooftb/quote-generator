@@ -1,16 +1,12 @@
 import './App.css';
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Card,
   CardHeader,
   CardTitle,
-  CardImg,
   CardBody,
   CardFooter,
   Button,
-  Modal,
-  ModalBody,
-  ModalHeader,
 } from 'shards-react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,8 +22,8 @@ function App() {
     method: 'GET',
     url: 'https://quotes15.p.rapidapi.com/quotes/random/',
     headers: {
-      'x-rapidapi-key': process.env.REACT_APP_RAPIDAPI_KEY,
-      'x-rapidapi-host': process.env.REACT_APP_RAPIDAPI_HOST,
+      'X-RapidAPI-Key': '9668ba13famsh518b845e512b1abp1b19b0jsn0c43a0db29b2',
+      'X-RapidAPI-Host': 'quotes15.p.rapidapi.com',
     },
   };
 
